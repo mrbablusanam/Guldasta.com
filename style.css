@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Container */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color:#fff;
+    position:fixed;
+    top:12px;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+.greet{
+    position: fixed;
+    width: 100%;
+    background-color:#9d53dee0;
+    color:white;
+    margin:auto;
+}
+.greet h5{
+    font-size: 13px;
+    font-weight: lighter;
+    font-family: 'Arial', sans-serif;
+    text-align:center;
+    padding:10px;
+}
+/* Logo Section */
+.logo {
+    margin:auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #9d53dee0;
+}
+.log-in{
+    background-color: #9d53dee0;
+    font-size: 15px;
+    font-weight: bold;
+    color:#fff ;
+}
+.log-in a{
+    text-decoration: none;
+    color: #9d53dee0;
+}
+
+/* Navbar Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #9d53dee0;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4; /* Light blue color */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Dropdown Effect (Optional for Submenus) */
+.navbar ul li:hover ul {
+    display: block;
+}
+
+.navbar ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #444;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.navbar ul li ul li {
+    margin: 5px 0;
+}
+
+.navbar ul li ul li a {
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.navbar ul li ul li a:hover {
+    color: #ff4081; /* Pink hover effect for dropdown */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+}
+
+.images {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures the images container takes full width */
+}
+
+.images .image1,
+.images .image2 {
+    position: relative; /* Make each image container relative for absolute positioning of buttons */
+    width: 50%; /* Each image takes 50% of the container */
+}
+
+.images img {
+    width: 100%; /* Each image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.btn1,
+.btn2 {
+    position: absolute;
+    bottom: 5%; /* Place the buttons 10% from the bottom of their respective images */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment adjustment */
+    color: white;
+    padding: 10px 10px;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn1 h5{
+    padding: 15px;
+    color:#ffffff;
+    font-size: 25px;
+    font-weight: 300;
+}
+.btn1 button{
+    text-decoration: none;
+    color:#fff;
+    font-size: 15px;
+    background-color: #7452e6e0;
+    border: none;
+    border-radius: 10px
+}
+.btn2 h5{
+    padding: 15px;
+    color:#ffffff;
+    font-size: 25px;
+    font-weight:300;
+}
+.shop {
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c37ef8;
+    border: none;
+    border-radius: 40px;
+}
+.shop a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    color:#fff;
+}
+/* Optional: Button hover effect 
+.btn1:hover,
+.btn2:hover {
+    background-color: #00bcd4;
+}*/
+
+.collection{
+    background-color:#fff ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    padding: 20px;
+    border: #444 1px solid;
+}
+.collection h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    font-size: 20px;
+    background-color: #9d53dee0;
+    border: 1px solid ;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.video {
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+
+}
+.video video{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    font-size: 30px;
+    background-color: #9d53dee0;
+    border: 1px solid ;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #888888;
+  }
+  
+  .flower-collection {
+    margin-left: 60px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Horizontal Scrollable Slider */
+  .collection-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Smooth snapping for horizontal scrolling */
+    padding: 10px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  .collection-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Edge, and Safari */
+  }
+  
+  /* Collection Item */
+  .collection-item {
+    flex: 0 0 200px; /* Fixed size for side items */
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, flex 0.3s;
+  }
+  
+  .collection-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .collection-item h2 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Front Item Styling */
+  .collection-item.front {
+    /*flex: 0 0 300px;  Larger size for the center item */
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  /* .collection-item.front img {
+    height: 200px; /* Taller image for the center item */
+  
+  
+  /* Hover Effect */
+  .collection-item:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    z-index: 1;
+  }
