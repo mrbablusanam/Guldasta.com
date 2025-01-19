@@ -18,7 +18,7 @@ To get started with these projects:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/Projects.git
+   git clone https://github.com/mrbablusanam/Projects.git
    ```
 
 2. **Navigate to the Project Folder**:
